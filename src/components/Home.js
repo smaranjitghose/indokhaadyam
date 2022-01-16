@@ -117,7 +117,9 @@ const Home = () => {
   return (
     <Container>
       <LogoSection>
-        <h1>IndoKhaadyam</h1>
+        <h1>IndoKhaadyam</h1><br>
+        </br>
+        <div>tag line here</div>
       </LogoSection>
       <SearchSection>
         <Form action='/' method='GET' role='search'>
