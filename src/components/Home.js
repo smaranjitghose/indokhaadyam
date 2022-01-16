@@ -119,7 +119,7 @@ const Home = () => {
       <LogoSection>
         <h1>IndoKhaadyam</h1><br>
         </br>
-        <div>tag line here</div>
+        <div>10000+ years, 1 Civilization, 500+ dishes</div>
       </LogoSection>
       <SearchSection>
         <Form action='/' method='GET' role='search'>
