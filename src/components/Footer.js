@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Box = styled.div`
 
-    padding: 60px 60px;
+    padding: 80px 60px;
     background: rgb(248, 248, 248);
     position: absolute;
     bottom: 0;
@@ -23,7 +23,7 @@ const Footer = () => {
     return (
         <Box>
             <h1 style={{ textAlign: "center",
-                        marginTop: "-45px" }}>
+                        marginTop: "-50px" }}>
                 IndoKhaadyam 
             </h1>
             <Container>
