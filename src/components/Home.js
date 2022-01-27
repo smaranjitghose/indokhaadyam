@@ -115,6 +115,7 @@ const MicIcon = styled.div`
 
 const Home = () => {
   return (
+    <>
     <Container>
       <LogoSection>
         <h1>IndoKhaadyam</h1><br>
@@ -162,6 +163,7 @@ const Home = () => {
         </ButtonSection>
       </SearchSection>
     </Container>
+      </>
   );
 };
 

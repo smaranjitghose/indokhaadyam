@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@800&family=Poppins:wght@100;700&family=Roboto+Slab&family=Rubik+Beastly&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    background: #606270;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .5);
+
+}
+
+#container .content{
+    max-width: 600px;
+    text-align: center;
+}
+
+#container .content h2{
+    font-size: 18vw;
+    color: white;
+    line-height: 1em;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#container .content h4{
+    position: relative;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #111;
+    width: 280px;
+    background: white;
+    font-weight: 300;
+    font-family: 'Baloo Bhai 2', cursive;
+    margin-left: 7vw;
+}
+
+#container .content p{
+    color: white;
+    font-size: 1.2em;
+}
+
+#container .content a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 25px;
+    background: #ff0562;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 25px;
+    border-radius: 25px;
+    border-bottom: 1px solid #d00d56;
+}
+
+#container .content a:hover{
+    background-color: black;
+    border-bottom: 1px solid black;
+}
