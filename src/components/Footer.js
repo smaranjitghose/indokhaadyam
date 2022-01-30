@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600&family=Roboto+Mono:wght@500&family=Varela+Round&display=swap" rel="stylesheet"></link>
+//the variables --footer-color1 and --footer-color2 are declared under :root in globalStyles.js
+//the variable --footer-font is declared under root in App.css
 
 const Box = styled.div`
-    background: rgb(0,0,0);
+    background: var(--footer-color2);
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -18,17 +19,19 @@ const Box1 = styled.div`
     width: 100%;
     text-align: center;
     align-self: center;
-    font-size: 0.8rem;
-    color: rgb(255,204,17);
+    font-size: 1.5rem;
+    color: var(--footer-color1);
+    font-family: var(--footer-font);
 `;
 
 const Box2 = styled.div`
     width: 100%;
     text-align: center;
-    background: rgb(255,204,17);
+    background: var(--footer-color1);
     padding-top: 5px;
-    color: rgb(0 , 0, 0);
+    color: var(--footer-color2);
     font-size: 1rem;
+    font-family: var(--footer-font);
 `
 
 const Triangle = styled.div`
@@ -37,30 +40,22 @@ const Triangle = styled.div`
     text-align: center;
     margin-left: 50vw;
     transform: translate(-16px);
-    border-top: 10px solid rgb(0,0,0);
-    border-left: 15px solid rgb(255,204,17);
-    border-right: 15px solid rgb(255,204,17);
+    border-top: 10px solid var(--footer-color2);
+    border-left: 15px solid var(--footer-color1);
+    border-right: 15px solid var(--footer-color1);
 `;
-
-//The Container variable was present in the previous version. As I wasnt using it I have just commented it.
-
-/*const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-`;*/
 
 const Footer = () => {
     return (
         <Box>
             <Box1>
-                <h1 style = {{fontFamily: "Varela Round"}}>IndoKhaadyam</h1>
+                IndoKhaadyam
             </Box1>
-            <div style = {{width: "100%" , backgroundColor: "rgb(255,204,17)" }}>
+            <div style = {{width: "100%" , backgroundColor: "var(--footer-color1)" }}>
                 <Triangle></Triangle>
             </div>
             <Box2>
-                <p style = {{fontFamily: "monospace"}}>Made with 💖 in India for the world</p>
+                Made with 💖 in India for the world
             </Box2>
         </Box>
     )
