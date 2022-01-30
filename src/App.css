@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins:wght@500&display=swap');
 
 :root{
-  --footer-font: 'Poppins' , 'Monsterrat';
+  --footer-font: 'Poppins' , 'Montserrat';
 }
 
 .App {
