@@ -1,14 +1,14 @@
-import './App.css';
-import Home from './components/Home';
-import GlobalStyle from './globalStyles';
-import Footer from './components/Footer';
+import "./App.css";
+import Home from "./components/Home";
+import GlobalStyle from "./globalStyles";
+import Footer from "./components/Footer";
 function App() {
   return (
     <>
-    <GlobalStyle />
-    <Home />
-    <Footer />
-  </>
+      <GlobalStyle />
+      <Home />
+      <Footer />
+    </>
   );
 }
 
