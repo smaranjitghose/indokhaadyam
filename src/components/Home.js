@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 const Container = styled.div`
   display: flex;
@@ -10,7 +11,7 @@ const LogoSection = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 290px;
+  min-height: 120px;
   height: calc(100% - 560px);
   padding: 20px;
   display: flex;
@@ -19,7 +20,7 @@ const LogoSection = styled.div`
 `;
 
 const SearchSection = styled.div`
-  padding: 20px;
+  padding: 20px 20px 0 20px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -117,7 +118,7 @@ const Home = () => {
   return (
     <Container>
       <LogoSection>
-        <h1>IndoKhaadyam</h1><br>
+        <h1 className="fw-bold" style={{letterSpacing: '2px'}}>IndoKhaadyam</h1><br>
         </br>
         <div>10000+ years, 1 Civilization, 500+ dishes</div>
       </LogoSection>

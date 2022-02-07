@@ -6,11 +6,10 @@ import styled from 'styled-components';
 
 const Box = styled.div`
     background: var(--footer-color2);
-    position: absolute;
-    bottom: 0;
     width: 100%;
     display: grid;
-    height: 20vh;
+    height: 18vh;
+    margin-top: 25px;
     grid-template-rows: 50% 10% 40%; 
 `;
 
