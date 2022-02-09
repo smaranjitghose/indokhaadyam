@@ -1,7 +1,7 @@
 import React from "react";
 import { Fade } from "react-reveal";
 import emoji from "react-easy-emoji";
-import styles from "./footer.module.scss";
+import styles from "../../assets/footer.module.scss";
 import UseAnimations from "react-useanimations";
 import JSONAnimation from "../../githublogo/github.json";
 import github from "react-useanimations/lib/github";
