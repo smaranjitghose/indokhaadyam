@@ -1,9 +1,7 @@
-
 import './App.css';
 import Home from './components/Home';
 import GlobalStyle from './globalStyles';
 import Footer from './components/Footer/Footer';
-
 function App() {
   return (
     <>
@@ -13,5 +11,4 @@ function App() {
     </>
   );
 }
-
 export default App;

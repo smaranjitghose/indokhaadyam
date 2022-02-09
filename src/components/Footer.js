@@ -55,7 +55,7 @@ const Footer = () => {
                 <Triangle></Triangle>
             </div>
             <Box2>
-                Made with 💖 in India for the world
+            Made with ❤️ in India for the foodies around the globe
             </Box2>
         </Box>
     )

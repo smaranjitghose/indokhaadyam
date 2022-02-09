@@ -1,9 +1,9 @@
-@use '../../scss/colors';
+@use '../scss/colors';
 
 .footerDiv {
 	position: relative;
 	margin-top: 2rem;
-	background-image: url("./footer/brooke.jpg");
+	background-image: url("../components/Footer/footer/brooke.jpg");
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -63,6 +63,6 @@
 		font-size: 1.2rem;
 		padding: 30px;
 		padding-top: 0;
-		color: white;
+		color: rgb(0, 0, 0);
 	}
 }

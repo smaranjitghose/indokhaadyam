@@ -39,7 +39,7 @@ export default function Footer(props) {
 			<div>
 				<Fade>
 					<p className={styles.footerText}>
-						{emoji("Made with ❤️ in India for the students of the world.")}
+						{emoji("Made with ❤️ in India for the foodies around the globe")}
 					</p>
 				</Fade>
 			</div>
