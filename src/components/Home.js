@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {ScrollToTop} from './scroll/ScrollToTop'
 
 const Container = styled.div`
   display: flex;
@@ -115,6 +116,7 @@ const MicIcon = styled.div`
 
 const Home = () => {
   return (
+    <>
     <Container>
       <LogoSection>
         <h1>IndoKhaadyam</h1><br>
@@ -162,6 +164,8 @@ const Home = () => {
         </ButtonSection>
       </SearchSection>
     </Container>
+    <ScrollToTop />
+    </>
   );
 };
 
