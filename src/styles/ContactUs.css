@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Dancing+Script&family=Inter:wght@100&family=Neonderthaw&family=Vujahday+Script&display=swap');
+.content{
+margin-left: 10rem;
+margin-top: 2rem;
+font-family: 'Inter', sans-serif;
+font-weight: bold;
+}
+label{
+    padding: 10px;
+}
+p{
+    font-weight: 600;
+}
+input{
+   height:2rem ;
+   border: 0.2px solid rgba(0, 0, 0, 0.205);
+   outline: none;
+   border-radius: 5px;
+
+}
+.First{
+    display: flex;
+
+}
+.fieldBlock{
+    display: grid;
+    padding: 10px;
+    
+}
+.company{
+    width: 22.9rem;
+}
+button{
+    width: 11rem;
+    height: 2.2rem;
+    border-radius: 50px;
+    outline: none;
+    background-color: #3198ff;
+    color: white;
+    font-size: large;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #0D7FF1;
+}
+form{
+    margin-bottom: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.144);
+ width: 26rem;
+ padding-left: 10px;
+ padding-bottom: 50px;
+ background-color:white;
+
+}
+body{
+    background-color: #fbf7f1;
+}
+textarea{
+    font-size: 17px;
+    outline: none;
+}
+@media(max-width:450px){
+    .content{
+        margin-left: 10px;
+    }
+}
