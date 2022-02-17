@@ -12,9 +12,7 @@ const App = () => {
        
           {/* //* Auth routes - USER*/}
 
-          <Route exact path="/user/register" element={<ContactForm />} />
-         
-
+          <Route exact path="/contact" element={<ContactForm />} />
          
 
         </Routes>

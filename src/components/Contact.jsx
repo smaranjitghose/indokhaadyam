@@ -17,7 +17,7 @@ const ContactForm =()=>{
      </div>
      <div className="fieldBlock">
      <label>Middle Name</label> 
-     <input type="text"  placeholder="Your Middle Name(Optional)"></input>
+     <input type="text"  placeholder="Your Middle Name"></input>
      </div>
      </div>
      
