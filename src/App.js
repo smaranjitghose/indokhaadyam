@@ -13,6 +13,10 @@ const App = () => {
           {/* //* Auth routes - USER*/}
 
           <Route exact path="/contact" element={<ContactForm />} />
+          
+          
+         {/* Features Page */}
+         {/* <Route exact path="/features" element={<Features/>} />  */}
          
 
         </Routes>
