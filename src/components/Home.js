@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState ,useCallback} from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -118,12 +118,16 @@ const Home = () => {
   const [civil, setCivil] = useState("0");
   const [dish, setDish] = useState(0);
 
-  function counter() {
+ 
+
+
+  const counter = useCallback(() => {
     let civilnew = (parseFloat(civil) + parseFloat("0.1")).toFixed(1);
     setCivil(civilnew);
     setDish(dish + 50);
     setYear(year + 1000);
-  }
+    
+  }, [year, dish, civil]);
 
   useEffect(() => {
     if (year < 10000 && dish < 500 && civil < 1.0) {
@@ -135,7 +139,7 @@ const Home = () => {
     if (civil > 0.9) {
       setCivil(1);
     }
-  }, [year, dish, civil]);
+  }, [year, dish, civil,counter]);
 
   return (
     <Container>
