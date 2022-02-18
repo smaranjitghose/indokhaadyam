@@ -2,6 +2,8 @@ import "./App.css";
 import ContactForm from "./components/Contact";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/Home";
+import Team from "./pages/Team";
+
 const App = () => {
   return (
     <>
@@ -9,12 +11,8 @@ const App = () => {
         <Routes>
           {/* //* Home routes */}
           <Route exact path="/" element={<HomePage />} />
-       
-          {/* //* Auth routes - USER*/}
-
           <Route exact path="/contact" element={<ContactForm />} />
-         
-
+          <Route exact path="/team" element={<Team />} />
         </Routes>
       </Router>
     </>
