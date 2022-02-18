@@ -1,4 +1,4 @@
-![Indo Khadyaam](./assets/banner.png)
+<p align="center"><img src="./assets/logo/Indokhadyaam.png" width=400></p>
 
 
 An open source project to catalogue the diverse set of Indian cuisines available across the subcontinent for thousands of years.

@@ -1,18 +1,23 @@
 import "./App.css";
-import Home from "./components/Home";
-import GlobalStyle from "./globalStyles";
-import Footer from "./components/Footer";
+import ContactForm from "./components/Contact";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/Home";
 import Team from "./pages/Team";
 
-function App() {
+const App = () => {
   return (
     <>
-      {/* <GlobalStyle />
-      <Home />
-      <Footer /> */}
-      <Team />
+      <Router>
+        <Routes>
+          {/* //* Home routes */}
+          <Route exact path="/" element={<HomePage />} />
+          <Route exact path="/contact" element={<ContactForm />} />
+          <Route exact path="/team" element={<Team />} />
+        </Routes>
+      </Router>
     </>
   );
-}
+};
 
 export default App;
+
