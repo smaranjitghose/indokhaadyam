@@ -68,4 +68,17 @@ textarea{
     .content{
         margin-left: 10px;
     }
+    form{
+        padding-left: 6px;
+    
+        width: 23rem;
+    }
+    textarea{
+        font-size: 14px;
+        outline: none;
+        margin-left: 16px;
+    }
+    button{
+        margin-left: 15px;
+    }
 }
