@@ -69,16 +69,33 @@ textarea{
         margin-left: 10px;
     }
     form{
-        padding-left: 2px;
+        padding-left: 0px;
     
-        width: 23rem;
+        width: 15rem;
     }
     textarea{
         font-size: 14px;
         outline: none;
-        margin-left: 16px;
+        margin-left: 6px;
+        width: 15rem;
     }
     button{
         margin-left: 15px;
     }
+    .First{
+        display: grid;
+    
+    }
+    input{
+        height:2rem ;
+        border: 0.2px solid rgba(0, 0, 0, 0.205);
+        outline: none;
+        border-radius: 5px;
+        padding-left: 6px;
+        width: 13rem;
+     
+     }
+     .company {
+         width: 13rem;
+     }
 }
