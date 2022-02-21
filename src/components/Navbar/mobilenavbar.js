@@ -37,6 +37,7 @@ const ListItem = styled.li`
 const Link = styled.a`
     text-decoration: none;
     color: var(--navbar-color2);
+    font-family: var(--navbar-font);
     &:hover{
         border-bottom: 2px solid #22a6b3;
         transition: all 0.2s ease-in-out;
