@@ -68,10 +68,14 @@ textarea{
     .content{
         margin-left: 10px;
     }
+    .fieldBlock{
+        text-align: center;
+        justify-content: center;
+    }
     form{
         padding-left: 0px;
-    
-        width: 15rem;
+    text-align: center;
+        width: 20rem;
     }
     textarea{
         font-size: 14px;
