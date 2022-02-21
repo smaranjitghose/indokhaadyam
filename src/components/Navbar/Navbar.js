@@ -36,6 +36,7 @@ const ListItem = styled.li`
 const Link = styled.a`
     text-decoration: none;
     color: var(--navbar-color2);
+    font-family: var(--navbar-font);
 `
 const Navbar = () => {
     return (
