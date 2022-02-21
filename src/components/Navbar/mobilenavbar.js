@@ -49,11 +49,11 @@ const MobileNavbar = () => {
     return (
         <Box>
                 {isOpen && <List>
-                    <ListItem><Link href = "#">Home</Link></ListItem>
+                    <ListItem><Link href = "/">Home</Link></ListItem>
                     <ListItem><Link href = "#">Categories</Link></ListItem>
-                    <ListItem><Link href = "#">Contact</Link></ListItem>
+                    <ListItem><Link href = "Contact">Contact</Link></ListItem>
                     <ListItem><Link href = "#">Blog</Link></ListItem>
-                    <ListItem><Link href = "#">Team</Link></ListItem>
+                    <ListItem><Link href = "Team">Team</Link></ListItem>
                 </List>}
                 
                 <MenuToggle isOpen = {isOpen} toggle = {() => setOpen(!isOpen)}/>
