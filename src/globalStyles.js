@@ -4,6 +4,8 @@ const GlobalStyle = createGlobalStyle`
   :root{
     --footer-color1: rgb(255,204,17);
     --footer-color2: rgb(0,0,0);
+    --navbar-color1: rgb(255,255,255);
+    --navbar-color2: rgb(0,0,0);
   }
 
   * {
