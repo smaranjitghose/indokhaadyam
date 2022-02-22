@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import { useMediaQuery } from "react-responsive";
 import Navbar from "../components/Navbar/Navbar";
 import MobileNavbar from "../components/Navbar/mobilenavbar";
+import TopCategory from "../components/TopCategory";
 
 
 const HomePage = () => {
@@ -16,6 +17,7 @@ const HomePage = () => {
   <Home />
        {!isMobile && <Navbar />}
        {isMobile && <MobileNavbar />}
+       <TopCategory/>
        <Footer />
 
   
