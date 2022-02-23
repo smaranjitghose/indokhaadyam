@@ -1,72 +1,7 @@
 import React, { useEffect, useState ,useCallback} from "react";
 import styled from "styled-components";
 import { FaSearch } from 'react-icons/fa';
-
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  
-  
-`;
-
-const LogoSection = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 290px;
-  height: calc(100% - 560px);
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-`;
-
-const SearchSection = styled.div`
-
-border: none;
-
-background-color:transparent ;
-padding: 30px;
- 
-`;
-
-const Form = styled.div`
- width:400px;
- display: flex;
- justify-content: center;
- flex-direction: row;
- align-items: center;
- border: 3px solid #FFCC11;
- padding: 0px 6px;
- background-color: white;
- border-radius:5px;
-
-  
-`;
-
-const inputStyle = {
-  color: "black",
-  border: "none",
-  padding: "10px",
-  width:"400px",
-  height: "36px",
- 
-  
-};
-
-const logoStyle = {
-  color: "#FFCC11",
-  fontSize:"26px",
-  marginRight:"5px"
- 
- 
-  
-};
-
-
-
+import "./Home.css"
 
 
 /*const SearchIcon = styled.span`
@@ -81,7 +16,6 @@ const logoStyle = {
   }
 `;
 */
-
 
 const Home = () => {
   const [year, setYear] = useState(0);
@@ -112,21 +46,21 @@ const Home = () => {
   }, [year, dish, civil,counter]);
 
   return (
-    <Container>
-      <LogoSection>
+    <div className="Container">
+      <div className="LogoSection">
         <h1>IndoKhaadyam</h1>
         <br></br>
         <div>
           {year} + years, {civil} Civilization, {dish} + dishes
         </div>
-      </LogoSection>
-      <SearchSection>
-        <Form action="/" method="GET" role="search">
-          <input type="search" style={inputStyle} placeholder="Find your delicacy..."  />
-          <FaSearch style={logoStyle} />
-        </Form>
-      </SearchSection>
-    </Container>
+      </div>
+      <div className="SearchSection">
+        <div className="Form" action="/" method="GET" role="search">
+          <input type="search" className="Input-section" placeholder="Find your delicacy..."  />
+          <FaSearch className="logo" />
+        </div>
+      </div>
+    </div>
   );
 };
 

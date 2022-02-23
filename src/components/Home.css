@@ -1,0 +1,50 @@
+.Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.LogoSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 290px;
+    height: calc(100% - 560px);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.SearchSection{
+    border: none;
+    background-color:transparent ;
+    padding: 30px;
+}
+
+.Form{
+    width:400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    border: 3px solid #FFCC11;
+    padding: 0px 6px;
+    background-color: white;
+    border-radius:5px;
+}
+
+.Input-section{
+    color: black;
+    border: none;
+    padding: 10px;
+    width: 400px;
+    height: 36px;
+}
+
+.logo{
+    color: #FFCC11;
+    font-size: 26px;
+    margin-right: 5px; 
+}

@@ -1,0 +1,42 @@
+/*the variables --footer-color1 and --footer-color2 are declared under :root in globalStyles.js*/
+/*the variable --footer-font is declared under root in App.css*/
+
+.Box{
+    background: var(--footer-color2);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    height: 20vh;
+    grid-template-rows: 50% 10% 40%; 
+}
+
+.Box1{
+    width: 100%;
+    text-align: center;
+    align-self: center;
+    font-size: 1.5rem;
+    color: var(--footer-color1);
+    font-family: var(--footer-font);
+}
+
+.Box2{
+    width: 100%;
+    text-align: center;
+    background: var(--footer-color1);
+    padding-top: 5px;
+    color: var(--footer-color2);
+    font-size: 1rem;
+    font-family: var(--footer-font);
+}
+
+.Triangle{
+    width: 30px;
+    height: 100%;
+    text-align: center;
+    margin-left: 50vw;
+    transform: translate(-16px);
+    border-top: 10px solid var(--footer-color2);
+    border-left: 15px solid var(--footer-color1);
+    border-right: 15px solid var(--footer-color1);
+}

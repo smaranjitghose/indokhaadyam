@@ -1,0 +1,36 @@
+/*the variables --navbar-color1 and --navbar-color2 are declared under :root in globalStyles.js*/
+/*the variable --navbar-font is declared under root in App.css*/
+
+.Navbar{
+    background: var(--navbar-color1);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.3rem;
+    padding: 15px;
+}
+
+.List{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.List-item{
+    margin-left: 25px;
+    border-bottom: 2px solid transparent;
+    font-family: var(--navbar-font);
+}
+.List-item:hover{
+    border-bottom: 2px solid #22a6b3;
+    transition: all 0.2s ease-in-out;
+}
+
+.Link{
+    text-decoration: none;
+    color: var(--navbar-color2);
+    font-family: var(--navbar-font);
+}
