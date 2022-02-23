@@ -1,15 +1,7 @@
 //This file is for the hamburger menu transition
 import { motion } from "framer-motion";
 import React from "react";
-import styled from "styled-components";
 import "../../styles/menutoggle.css"
-
-const Button = styled.div`
-  z-index: 99;
-  cursor: pointer;
-  display: flex;
-  justify-content: end;
-`;
 
 const Path = (props) => (
   <motion.path
