@@ -8,7 +8,7 @@ const TopCategory = () => {
     //console.log(data)
   return (
     <>
-     <div className="frame">
+     <div className="frame" id="frame">
          <h2>
              Top Category
          </h2>
@@ -35,7 +35,7 @@ const TopCategory = () => {
                   </h3>
 
                   <button>
-                      <a href="#"> Check Out</a>
+                      <a href="#frame"> Check Out</a>
 
                   </button>
 
