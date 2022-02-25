@@ -1,7 +1,7 @@
 //This file is for the hamburger menu transition
 import { motion } from "framer-motion";
 import React from "react";
-import "../../styles/menutoggle.css"
+import "../../styles/menutoggle.css";
 
 const Path = (props) => (
   <motion.path
