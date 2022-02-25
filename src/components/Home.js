@@ -4,18 +4,6 @@ import { FaSearch } from 'react-icons/fa';
 import "./Home.css";
 
 
-/*const SearchIcon = styled.span`
-  color: #9aa0a6;
-  height: 30px;
-  width: 30px;
-  padding-right: 10px;
-  display: flex;
-  align-items: center;
-  & svg {
-    fill: #9aa0a6;
-  }
-`;
-*/
 
 const Home = () => {
   const [year, setYear] = useState(0);
