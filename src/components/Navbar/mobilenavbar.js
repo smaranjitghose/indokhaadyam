@@ -28,7 +28,7 @@ const List = styled.ul`
 
 const ListItem = styled.li`
     border-bottom: 2px solid transparent;
-    font-family: var(--navbar-font);
+    font-family: var(--main-font);
     width: 100%;
     text-align: center;
     margin-bottom: 10px;
@@ -37,7 +37,7 @@ const ListItem = styled.li`
 const Link = styled.a`
     text-decoration: none;
     color: var(--navbar-color2);
-    font-family: var(--navbar-font);
+    font-family: var(--main-font);
     &:hover{
         border-bottom: 2px solid #22a6b3;
         transition: all 0.2s ease-in-out;

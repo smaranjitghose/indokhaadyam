@@ -21,7 +21,7 @@ const Box1 = styled.div`
     align-self: center;
     font-size: 1.5rem;
     color: var(--footer-color1);
-    font-family: var(--footer-font);
+    font-family: var(--main-font);
 `;
 
 const Box2 = styled.div`
@@ -31,7 +31,7 @@ const Box2 = styled.div`
     padding-top: 5px;
     color: var(--footer-color2);
     font-size: 1rem;
-    font-family: var(--footer-font);
+    font-family: var(--main-font);
 `
 
 const Triangle = styled.div`
