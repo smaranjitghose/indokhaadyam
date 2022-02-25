@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { MenuToggle } from './menuToggle';
-import "../../styles/mobilenav.css"
+import "../../styles/mobilenav.css";
 
 const MobileNavbar = () => {
 
