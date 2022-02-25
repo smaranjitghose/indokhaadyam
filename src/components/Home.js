@@ -1,7 +1,7 @@
 import React, { useEffect, useState ,useCallback} from "react";
 import styled from "styled-components";
 import { FaSearch } from 'react-icons/fa';
-import "./Home.css"
+import "./Home.css";
 
 
 /*const SearchIcon = styled.span`
