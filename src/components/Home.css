@@ -1,0 +1,11 @@
+h1 {
+    font-family: var(--main-font);
+}
+
+div{
+    font-family: var(--main-font);
+}
+
+input {
+    font-family: var(--main-font);
+}

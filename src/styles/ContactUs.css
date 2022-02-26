@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Dancing+Script&family=Inter:wght@100&family=Neonderthaw&family=Vujahday+Script&display=swap');
+*{
+    font-family: var(--main-font);
+}
+
 .content{
 margin-left: 10rem;
 margin-top: 2rem;
@@ -50,11 +54,11 @@ button:hover{
 form{
     margin-bottom: 40px;
     border: 1px solid rgba(0, 0, 0, 0.144);
- width: 26rem;
- padding-left: 10px;
- padding-bottom: 50px;
- background-color:white;
- padding: 30px;
+    width: 26rem;
+    padding-left: 10px;
+    padding-bottom: 50px;
+    background-color:white;
+    padding: 30px;
 
 }
 body{
