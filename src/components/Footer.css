@@ -25,6 +25,11 @@
     font-family: var(--main-font);
 }
 
+.triangle-div{
+    width: 100%;
+    background-color: var(--footer-color1);
+}
+
 .Triangle{
     width: 30px;
     height: 100%;
