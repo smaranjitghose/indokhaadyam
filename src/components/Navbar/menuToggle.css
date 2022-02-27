@@ -1,0 +1,6 @@
+.toggle-button{
+  z-index: 99;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+}
