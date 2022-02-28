@@ -9,19 +9,17 @@ import TopCategory from "../components/TopCategory";
 
 
 const HomePage = () => {
-  const isMobile = useMediaQuery({maxWidth: "700px"})
+  const isMobile = useMediaQuery({ maxWidth: "700px" })
 
   return (
-  <>
-  <GlobalStyle />
-  <Home />
-       {!isMobile && <Navbar />}
-       {isMobile && <MobileNavbar />}
-       <TopCategory/>
-       <Footer />
-
-  
-  </>
+    <>
+      <GlobalStyle />
+      <Home />
+      {!isMobile && <Navbar />}
+      {isMobile && <MobileNavbar />}
+      <TopCategory />
+      <Footer />
+    </>
   )
 };
 

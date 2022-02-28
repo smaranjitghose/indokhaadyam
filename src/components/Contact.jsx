@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/ContactUs.css"
 import Textareademo from "./Textarea";
+import Footer from "./Footer";
 
 const ContactForm = () => {
    return (
@@ -46,8 +47,8 @@ const ContactForm = () => {
 
             </form>
          </div>
+         <Footer />
       </>
-
    )
 };
 export default ContactForm;
