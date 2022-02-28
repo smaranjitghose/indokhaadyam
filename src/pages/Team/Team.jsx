@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import "../styles/team.css";
-import anush_bhatia from "../assets/anush_bhatia.png";
-import smaranjit_ghose from "../assets/smaranjit_ghose.jpg";
+import "./team.css";
+import anush_bhatia from "../../assets/anush_bhatia.png";
+import smaranjit_ghose from "../../assets/smaranjit_ghose.jpg";
 import { Card } from "react-bootstrap";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import GlobalStyle from "../globalStyles";
-import Footer from "../components/Footer";
+import GlobalStyle from "../../globalStyles";
+import Footer from "../../components/Footer/Footer";
 
 function Team() {
   const maintainerSection = [

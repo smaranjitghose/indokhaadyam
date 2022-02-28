@@ -1,9 +1,9 @@
 import "./App.css";
-import ContactForm from "./components/Contact";
+import ContactForm from "./pages/Contact/Contact";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import HomePage from "./pages/Home";
-import Team from "./pages/Team";
-import PageNotFound from "./pages/PageNotFound";
+import HomePage from "./pages/Home/HomePage";
+import Team from "./pages/Team/Team";
+import PageNotFound from "./pages/PageNotFound/PageNotFound";
 
 const App = () => {
     return (
