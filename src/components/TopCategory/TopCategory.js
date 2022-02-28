@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/topCategory.css";
+import "./topCategory.css";
 import data from './TopCategoryData';
 
 
