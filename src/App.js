@@ -10,15 +10,9 @@ const App = () => {
         <>
             <Router>
                 <Routes>
-                    {/* Page Not Found Error */}
                     <Route exact path="*" element={<PageNotFound />} />
-
-                    {/* //* Home routes */}
                     <Route exact path="/" element={<HomePage />} />
                     <Route exact path="/contact" element={<ContactForm />} />
-
-                    {/* Features Page */}
-                    {/* <Route exact path="/features" element={<Features/>} />  */}
                     <Route exact path="/team" element={<Team />} />
                 </Routes>
             </Router>
