@@ -148,6 +148,10 @@
   width: 100%;
 }
 
+.profile_img{
+  height: 100%;
+}
+
 .text_center {
   text-align: center;
 }

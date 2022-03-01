@@ -80,7 +80,7 @@ function Team() {
             >
               <img
                 src={c.avatar_url}
-                className="grid_wd_100 profile_img"
+                className="profile_img"
                 alt="Profile"
               />
               <figcaption className="position_absolute grid_wd_100 va_top">
