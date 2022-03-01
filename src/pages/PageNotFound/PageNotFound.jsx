@@ -1,7 +1,7 @@
 import React from 'react';
-import "../styles/error404.css";
-import Error404 from "../assets/images/error/Error404.gif";
-import Cheese from "../assets/images/error/Cheese.png";
+import "./error404.css";
+import Error404 from "../../assets/images/error/Error404.gif";
+import Cheese from "../../assets/images/error/Cheese.png";
 import { Link } from 'react-router-dom';
 
 

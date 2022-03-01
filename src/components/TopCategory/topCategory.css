@@ -20,11 +20,11 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
-    width: 80%;
     flex-wrap: wrap;
-    padding: 20px;
+    align-items: center;
+    width: 100%;
     gap: 50px;
+    padding: 0% 10%;
   }
   
   .dish {
@@ -100,5 +100,25 @@ img {
   .dish:hover .details button{
       transition: all 0.3s ease-out 0.2s;
   }
+
+  @media screen and (max-width: 1200px){
+      .dish{
+          width: 40%;
+      }
+  }
   
-  
+  @media screen and (max-width: 1000px){
+      .dish{
+          width: 44%;
+      }
+  }
+  @media screen and (max-width: 800px){
+      .dish{
+          width: 63%;
+      }
+  }
+  @media screen and (max-width: 500px){
+      .dish{
+          width: 80%;
+      }
+  }

@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
-import "../styles/team.css";
-import anush_bhatia from "../assets/anush_bhatia.png";
-import smaranjit_ghose from "../assets/smaranjit_ghose.jpg";
+import "./team.css";
+import anush_bhatia from "../../assets/anush_bhatia.png";
+import smaranjit_ghose from "../../assets/smaranjit_ghose.jpg";
 import { Card } from "react-bootstrap";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import Footer from "../components/Footer";
+import GlobalStyle from "../../globalStyles";
+import Footer from "../../components/Footer/Footer";
 
 function Team() {
   const maintainerSection = [
@@ -46,19 +47,24 @@ function Team() {
 
   return (
     <>
+      <GlobalStyle />
       <div className="Team">
         {/* <!-- Project Maintainer Sub Section --> */}
         <p className="titleMain">Project Maintainers</p>
         <div className="projectMaintainers">
           {maintainerSection.map((item, index) => (
             <Card key={index}>
-              <Card.Img variant="top" src={item.img} />
-              <Card.Body>
+              <Card.Img variant="top" src={item.img} style={{borderRadius: 200}}/>
+              <Card.Body style={{"background-color" : "#fdd835", "border-radius" : "25px"}}>
                 <Card.Title>{item.name}</Card.Title>
                 <p className="maintainer_title">{item.title}</p>
                 <div className="logo_div">
-                  <a href={item.githubLink} className="github_icon"><FaGithub /></a>
-                  <a href={item.linkedinLink} className="linkedin_icon"><FaLinkedin /></a>
+                  <a href={item.githubLink} className="github_icon">
+                    <FaGithub />
+                  </a>
+                  <a href={item.linkedinLink} className="linkedin_icon">
+                    <FaLinkedin />
+                  </a>
                 </div>
               </Card.Body>
             </Card>
@@ -74,7 +80,7 @@ function Team() {
             >
               <img
                 src={c.avatar_url}
-                className="grid_wd_100 profile_img"
+                className="profile_img"
                 alt="Profile"
               />
               <figcaption className="position_absolute grid_wd_100 va_top">

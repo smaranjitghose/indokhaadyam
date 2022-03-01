@@ -1,4 +1,4 @@
-*{
+* {
   font-family: var(--main-font);
 }
 
@@ -10,7 +10,7 @@
   overflow: hidden;
 }
 
-.maintainer_title {
+.maintainer_title {  
   font-size: 20px;
   margin: 0.5rem 0;
 }
@@ -19,7 +19,7 @@
   display: inline-flex;
   width: 100%;
   justify-content: center;
-  gap: 2rem;
+  gap: 2rem;  
 }
 
 .github_icon {
@@ -42,6 +42,7 @@
 
 .titleMain {
   font-size: 2rem;
+  margin: 2rem;
   font-weight: bold;
   text-shadow: 3px 4px 2px #0000002e;
 }
@@ -145,6 +146,10 @@
 
 .grid_wd_100 {
   width: 100%;
+}
+
+.profile_img{
+  height: 100%;
 }
 
 .text_center {
