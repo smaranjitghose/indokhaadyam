@@ -9,11 +9,19 @@ margin-top: 2rem;
 font-family: 'Inter', sans-serif;
 font-weight: bold;
 }
-label{
+.content h1{ 
+    /* margin-left: 10rem; */
+    margin-top: 5rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    }
+
+ label{
     padding: 10px;
 }
-p{
+.content p{
     font-weight: 600;
+    /* text-align: center; */
 }
 input{
    height:2rem ;
@@ -38,8 +46,8 @@ input::placeholder{
 .company{
     width: 22.9rem;
 }
-button{
-    width: 11rem;
+.btn{
+    width: 5rem;
     height: 2.2rem;
     border-radius: 50px;
     outline: none;
@@ -47,11 +55,11 @@ button{
     color: white;
     font-size: large;
 }
-button:hover{
+.btn:hover{
     cursor: pointer;
     background-color: #0D7FF1;
 }
-form{
+.content form{
     margin-bottom: 40px;
     border: 1px solid rgba(0, 0, 0, 0.144);
     width: 26rem;
@@ -59,7 +67,6 @@ form{
     padding-bottom: 50px;
     background-color:white;
     padding: 30px;
-
 }
 body{
     background-color: #fbf7f1;

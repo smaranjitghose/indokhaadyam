@@ -2,13 +2,19 @@ import React from "react";
 import "./ContactUs.css"
 import Textareademo from "./Textarea";
 import Footer from "../../components/Footer/Footer";
+import { useMediaQuery } from "react-responsive";
+import Navbar from "../../components/Navbar/Navbar";
+import MobileNavbar from "../../components/Navbar/mobilenavbar";
 
 const ContactForm = () => {
+   const isMobile = useMediaQuery({ maxWidth: "700px" })
    return (
       <>
+      {!isMobile && <Navbar />}
+      {isMobile && <MobileNavbar />}
          <div className="content">
             <h1>Contact Us</h1>
-            <p>Got a question?<br />Fill out the form and we'll get <br /> back to you as soon as we can.<br /></p>
+            <p>Got a question?<br />Fill out the form and we'll get back to you as soon as we can.<br /></p>
 
             <form>
                <div className="First">
@@ -41,7 +47,7 @@ const ContactForm = () => {
                <label>Message*</label><br /><br />
 
                <Textareademo /><br />
-               <button type="submit">Send Message</button>
+               <button type="submit" className="btn">Send Message</button>
 
 
 
