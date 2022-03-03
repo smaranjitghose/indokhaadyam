@@ -1,42 +1,42 @@
-.Box{
-    background: rgb(0,0,0);
-    width: 100%;
-    display: grid;
-    height: 20vh;
-    grid-template-rows: 50% 10% 40%; 
+.Box {
+  background: rgb(0, 0, 0);
+  width: 100%;
+  display: grid;
+  height: 20vh;
+  grid-template-rows: 50% 10% 40%;
 }
 
-.Box1{
-    width: 100%;
-    text-align: center;
-    align-self: center;
-    font-size: 1.5rem;
-    color: rgb(255,204,17);
-    font-family: var(--main-font);
+.Box1 {
+  width: 100%;
+  text-align: center;
+  align-self: center;
+  font-size: 1.5rem;
+  color: rgb(255, 204, 17);
+  font-family: var(--main-font);
 }
 
-.Box2{
-    width: 100%;
-    text-align: center;
-    background: rgb(255,204,17);
-    padding-top: 5px;
-    color: rgb(0,0,0);
-    font-size: 1rem;
-    font-family: var(--main-font);
+.Box2 {
+  width: 100%;
+  text-align: center;
+  background: rgb(255, 204, 17);
+  padding-top: 5px;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  font-family: var(--main-font);
 }
 
-.triangle-div{
-    width: 100%;
-    background-color: rgb(255,204,17);
+.triangle-div {
+  width: 100%;
+  background-color: rgb(255, 204, 17);
 }
 
-.Triangle{
-    width: 0.5px;
-    height: 100%;
-    text-align: center;
-    margin-left: 50vw;
-    transform: translate(-16px);
-    border-top: 10px solid rgb(0,0,0);
-    border-left: 15px solid rgb(255,204,17);
-    border-right: 15px solid rgb(255,204,17);
+.Triangle {
+  width: 0.5px;
+  height: 100%;
+  text-align: center;
+  margin-left: 50vw;
+  transform: translate(-16px);
+  border-top: 10px solid rgb(0, 0, 0);
+  border-left: 15px solid rgb(255, 204, 17);
+  border-right: 15px solid rgb(255, 204, 17);
 }
