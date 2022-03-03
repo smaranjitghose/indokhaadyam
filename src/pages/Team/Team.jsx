@@ -6,8 +6,12 @@ import { Card } from "react-bootstrap";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import GlobalStyle from "../../globalStyles";
 import Footer from "../../components/Footer/Footer";
+import Navbar from "../../components/Navbar/Navbar";
+import MobileNavbar from "../../components/Navbar/mobilenavbar";
+import { useMediaQuery } from "react-responsive";
 
 function Team() {
+  const isMobile = useMediaQuery({ maxWidth: "700px" })
   const maintainerSection = [
     {
       name: "Smaranjit Ghose",
@@ -48,14 +52,20 @@ function Team() {
   return (
     <>
       <GlobalStyle />
+      
+      {!isMobile && <Navbar />}
+      {isMobile && <MobileNavbar />}
+
+
+
       <div className="Team">
         {/* <!-- Project Maintainer Sub Section --> */}
         <p className="titleMain">Project Maintainers</p>
         <div className="projectMaintainers">
           {maintainerSection.map((item, index) => (
-            <Card key={index}>
-              <Card.Img variant="top" src={item.img} style={{borderRadius: 200}}/>
-              <Card.Body style={{"background-color" : "#fdd835", "border-radius" : "25px"}}>
+            <Card key={index} style={{}}>
+              <Card.Img variant="top" src={item.img} style={{borderRadius: 200,}}/>
+              <Card.Body style={{backgroundColor : "#fdd835", borderRadius : "25px"}}>
                 <Card.Title>{item.name}</Card.Title>
                 <p className="maintainer_title">{item.title}</p>
                 <div className="logo_div">
