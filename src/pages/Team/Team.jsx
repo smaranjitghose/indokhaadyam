@@ -52,7 +52,7 @@ function Team() {
   return (
     <>
       <GlobalStyle />
-
+      
       {!isMobile && <Navbar />}
       {isMobile && <MobileNavbar />}
 
@@ -63,9 +63,9 @@ function Team() {
         <p className="titleMain">Project Maintainers</p>
         <div className="projectMaintainers">
           {maintainerSection.map((item, index) => (
-            <Card key={index}>
-              <Card.Img variant="top" src={item.img} />
-              <Card.Body>
+            <Card key={index} style={{}}>
+              <Card.Img variant="top" src={item.img} style={{borderRadius: 200,}}/>
+              <Card.Body style={{backgroundColor : "#fdd835", borderRadius : "25px"}}>
                 <Card.Title>{item.name}</Card.Title>
                 <p className="maintainer_title">{item.title}</p>
                 <div className="logo_div">
