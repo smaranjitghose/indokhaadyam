@@ -1,0 +1,29 @@
+{
+  "name": "indokhaadyam",
+  "version": "1.0.0",
+  "description": "<p align=\"center\"><img src=\"./assets/logo/Indokhadyaam.png\" width=400></p>",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "enode src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smaranjitghose/indokhaadyam.git"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "module",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smaranjitghose/indokhaadyam/issues"
+  },
+  "homepage": "https://github.com/smaranjitghose/indokhaadyam#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "mongodb": "^4.4.1",
+    "mongoose": "^6.2.4",
+    "nodemon": "^2.0.15"
+  }
+}
