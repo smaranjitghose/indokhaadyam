@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 :root {
   --main-font: Inter;
 }
@@ -18,4 +20,32 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px #ffcc11;
+  border-radius: 2px;
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  max-height: 10px;
+  -webkit-box-shadow: inset 0 0 6px #ffcc11;
+  background: #ffcc11;
+  transition: 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffcc11;
+}
+
+html {
+  overflow-y: visible;
+  scrollbar-color: #ffcc11 #f1f1f1;
+  scrollbar-width: auto;
 }
