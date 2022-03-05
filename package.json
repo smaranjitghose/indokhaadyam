@@ -14,7 +14,6 @@
   },
   "keywords": [],
   "author": "",
-  "type": "module",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/smaranjitghose/indokhaadyam/issues"
@@ -22,6 +21,7 @@
   "homepage": "https://github.com/smaranjitghose/indokhaadyam#readme",
   "dependencies": {
     "dotenv": "^16.0.0",
+    "fastify": "^3.27.2",
     "mongodb": "^4.4.1",
     "mongoose": "^6.2.4",
     "nodemon": "^2.0.15"
