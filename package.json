@@ -45,6 +45,9 @@
     ]
   },
   "devDependencies": {
-    "mini-css-extract-plugin": "2.4.5"
+    "autoprefixer": "^10.4.2",
+    "mini-css-extract-plugin": "2.4.5",
+    "postcss": "^8.4.7",
+    "tailwindcss": "^3.0.23"
   }
 }
