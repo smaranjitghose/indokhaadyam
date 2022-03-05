@@ -11,9 +11,9 @@ const ContactForm = () => {
     <>
       {!isMobile && <Navbar />}
       {isMobile && <MobileNavbar />}
-      <div className="w-[95%] lg:h-[65vh] mt-16 mb-9   max-w-6xl m-auto ">
+      <div className="w-[95%] min-h-[75vh]   max-w-6xl m-auto ">
         <div className="flex my-28 flex-col   lg:flex-row">
-          <div className="basis-1/2 py-3 bg-white">
+          <div className="basis-1/2 py-6 lg:py-12 bg-white">
             <h1 className="text-center font-bold text-3xl  capitalize">
               Get In touch
             </h1>
@@ -59,7 +59,7 @@ const ContactForm = () => {
               </div>
             </form>
           </div>
-          <div className="basis-1/2 bg-orange-100  ">
+          <div className="basis-1/2 py-6 lg:py-12  bg-orange-100  ">
             <div className="w-[90%] lg:w-[80%] my-6 m-auto">
               <h1 className="font-bold text-2xl">
                 or checkout these resources
