@@ -64,6 +64,46 @@ textarea{
     font-size: 17px;
     outline: none;
 }
+@media(max-width:850px){
+    .content{
+        margin-left: 14rem;
+    }
+    .fieldBlock{
+        text-align: center;
+        justify-content: center;
+    }
+    form{
+       
+        padding-left: 0px;
+    text-align: center;
+        width: 20rem;
+    }
+    textarea{
+        font-size: 14px;
+        outline: none;
+        margin-left: 6px;
+        width: 15rem;
+    }
+    button{
+        margin-left: 15px;
+    }
+    .First{
+        display: grid;
+    
+    }
+    input{
+        height:2rem ;
+        border: 0.2px solid rgba(0, 0, 0, 0.205);
+        outline: none;
+        border-radius: 5px;
+        padding-left: 6px;
+        width: 13rem;
+     
+     }
+     .company {
+         width: 13rem;
+     }
+}
 @media(max-width:450px){
     .content{
         margin-left: 10px;
