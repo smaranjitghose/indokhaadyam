@@ -1,4 +1,6 @@
-const dotenv = require('dotenv').config()
+//The "type":"module" has been removed from package.json because its throwing an error
+
+require('dotenv').config()
 
 const fastify = require('fastify')({
     logger: true
