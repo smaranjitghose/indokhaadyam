@@ -4,11 +4,14 @@ import Footer from "../../components/Footer/Footer";
 import { useMediaQuery } from "react-responsive";
 import Navbar from "../../components/Navbar/Navbar";
 import MobileNavbar from "../../components/Navbar/mobilenavbar";
+import GlobalStyle from "../../globalStyles";
 
 const ContactForm = () => {
   const isMobile = useMediaQuery({ maxWidth: "700px" });
   return (
     <>
+      <GlobalStyle />
+
       {!isMobile && <Navbar />}
       {isMobile && <MobileNavbar />}
       <div className="w-[95%] min-h-[75vh]   max-w-6xl m-auto ">
