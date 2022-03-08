@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/index.js",
-    "start": "enode src/index.js",
+    "start": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,7 +22,7 @@
   "dependencies": {
     "dotenv": "^16.0.0",
     "fastify": "^3.27.2",
-    "mongodb": "^4.4.1",
+    "mongodb": "^2.2.36",
     "mongoose": "^6.2.4",
     "nodemon": "^2.0.15"
   }
