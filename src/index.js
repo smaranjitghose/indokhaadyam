@@ -13,23 +13,20 @@ var my_collection = ""
 var MongoClient = require('mongodb').MongoClient;
 var url = process.env.DB_URI;
 
-MongoClient.connect(url, function(err, db) {
+MongoClient.connect(url, async function(err, db) {
   console.log("Connected successfully to server");
   var collection = db.collection('recipe');
   console.log("Go to localhost:3000 to view data");
 
-  collection.find({}).toArray(function(err, result) {
-    my_collection = JSON.stringify(result, null, 2);
+  await collection.find({}).toArray(function(err, result) {
+    my_collection=JSON.stringify(result, null, 2);
     db.close();
   });
 });
 
 fastify.get('/' , async(request, reply) => {
-  if(my_collection)
-    return my_collection
-  else
-    return 'Fixing The Bugs'
-})
+  reply.send('Wecome to IndoKhadyaam Server \nThis is a work in progress effort\nCurrent Version: 0.0.1');
+}) 
 
 const start = async () => {
     try{
