@@ -14,7 +14,7 @@ var MongoClient = require('mongodb').MongoClient;
 var url = process.env.DB_URI;
 
 MongoClient.connect(url, function(err, db) {
-  console.log("Connected successfully to server", url);
+  console.log("Connected successfully to server");
   var collection = db.collection('recipe');
   console.log("Go to localhost:3000 to view data");
 
