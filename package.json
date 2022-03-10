@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/smaranjitghose/indokhaadyam#readme",
   "dependencies": {
+    "@vercel/node": "^1.13.0",
     "dotenv": "^16.0.0",
     "fastify": "^3.27.2",
     "mongodb": "^2.2.36",
