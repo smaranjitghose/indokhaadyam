@@ -6,7 +6,7 @@ const fastify = require('fastify')({
     logger: true
 })
 
-// database
+// Database Connection
 const mongoose = require('mongoose')
 var my_collection = ""
 
@@ -14,7 +14,7 @@ var MongoClient = require('mongodb').MongoClient;
 var url = process.env.DB_URI;
 
 MongoClient.connect(url, function(err, db) {
-  console.log("Connected to MongoDB server Successfully", url);
+  console.log("Connected successfully to server", url);
   var collection = db.collection('recipe');
   console.log("Go to localhost:3000 to view data");
 
