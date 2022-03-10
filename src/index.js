@@ -25,7 +25,10 @@ MongoClient.connect(url, function(err, db) {
 });
 
 fastify.get('/' , async(request, reply) => {
+  if(my_collection)
     return my_collection
+  else
+    return 'Fixing The Bugs'
 })
 
 const start = async () => {
