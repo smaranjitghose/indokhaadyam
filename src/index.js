@@ -16,6 +16,8 @@ mongoose.connect(url)
 
 const routes = require('./Routes')
 
+fastify.register(require('fastify-cors'), { origin: '*' });
+
 fastify.get('/' , async(request, reply) => {
   reply.send('Wecome to IndoKhadyaam Server \nThis is a work in progress effort\nCurrent Version: 0.0.1\nRoutes:\nTo view data: "/recipe"\nTo update/delete: "/recipe/:id"');
 }) 
@@ -25,7 +27,7 @@ routes.forEach((route,index) => {
 })
 const start = async () => {
     try{
-        await fastify.listen(3000)
+        await fastify.listen(5000)
         fastify.log.info('Fastify works!')
     }
     catch (error){

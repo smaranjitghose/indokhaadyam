@@ -23,6 +23,7 @@
     "@vercel/node": "^1.13.0",
     "dotenv": "^16.0.0",
     "fastify": "^3.27.2",
+    "fastify-cors": "^6.0.3",
     "mongodb": "^2.2.36",
     "mongoose": "^6.2.4",
     "nodemon": "^2.0.15"
