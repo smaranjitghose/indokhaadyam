@@ -12,20 +12,34 @@
     padding: 5% 5%;
 }
 
-form{
+.form{
     height: auto;
     min-height: 53vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .form-group{
     margin-bottom: 10px;
+    width: 100%;
+}
+
+.submit-div{
+    width: fit-content;
+    border: 1px solid red;
+    text-align: center;
+    padding: 4px 5px;
+    border-radius: 4px;
+    background-color: red;
+}
+
+.submit-button{
+    background-color: red;
+    padding: 5px 8px;
+    border-radius: 5px;
 }
 
 #name , #instructions , #img-link {
     width: 100%;
-}
-
-button{
-    border: 1px solid black;
-    background-color: aqua;
 }
