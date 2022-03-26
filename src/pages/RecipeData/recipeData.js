@@ -11,7 +11,7 @@ class RecipeData extends Component {
     }
 
     componentDidMount() {
-        fetch('http://127.0.0.1:5000/recipe')
+        fetch('https://server-indok-smaranjitghose.vercel.app/recipe')
         .then(res => res.json())
         .then((data) => {
           this.setState({ recipes : data });
