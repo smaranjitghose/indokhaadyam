@@ -5,6 +5,7 @@ import HomePage from "./pages/Home/HomePage";
 import Team from "./pages/Team/Team";
 import PageNotFound from "./pages/PageNotFound/PageNotFound";
 import RecipeForm from "./pages/RecipeForm/RecipeForm";
+import RecipeData from "./pages/RecipeData/recipeData";
 const App = () => {
     return (
         <>
@@ -15,6 +16,7 @@ const App = () => {
                     <Route exact path="/contact" element={<ContactForm />} />
                     <Route exact path="/team" element={<Team />} />
                     <Route exact path='/recipeform' element={<RecipeForm />}/>
+                    <Route exact path='/recipedata' element={<RecipeData />}/>
                 </Routes>
             </Router>
         </>

@@ -1,0 +1,12 @@
+.recipe-data-div{
+    min-height: 75vh;
+    margin-top: 60px;
+}
+.recipe-div{
+    display: flex;
+    flex-direction: row;
+}
+
+.recipe-div div{
+    width: 150px;
+}

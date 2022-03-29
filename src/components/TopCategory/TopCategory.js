@@ -34,7 +34,7 @@ const TopCategory = () => {
                       }
                   </h3>
 
-                  <button>
+                  <button className="click-button">
                       <a href="#frame"> Check Out</a>
 
                   </button>
