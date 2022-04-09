@@ -38,6 +38,14 @@
     background-color: red;
     padding: 5px 8px;
     border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.details-button{
+    background-color: blue;
+    padding: 5px 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 #name , #instructions , #img-link {

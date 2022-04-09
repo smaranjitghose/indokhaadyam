@@ -1,12 +1,35 @@
 .recipe-data-div{
     min-height: 75vh;
-    margin-top: 60px;
+    margin-top: 68px;
 }
+
+.recipe-data-heading{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
 .recipe-div{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+    column-gap: 10px;
 }
 
-.recipe-div div{
+.recipe-name{
+    width: 100px;
+    min-width: fit-content;
+}
+
+.instructions{
     width: 150px;
+    min-width: fit-content;
+}
+
+.delete-button{
+    background-color: red;
+    padding: 3px 5px;
+    border-radius: 6px;
+    color: white;
 }
