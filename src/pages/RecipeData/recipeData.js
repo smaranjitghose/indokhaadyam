@@ -3,18 +3,12 @@ import './recipeData.css';
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 import GlobalStyle from "../../globalStyles";
+import Recipe from "./recipe";
 
 class RecipeData extends Component {
 
     state = {
-        recipes: []
-    }
-
-    onButtonDelete = (id) => {
-        fetch('http://127.0.0.1:5000/recipe/' + id, {
-            method: 'DELETE',
-        })
-        window.location.reload()
+        recipes: [],
     }
 
     componentDidMount() {
@@ -22,7 +16,6 @@ class RecipeData extends Component {
             .then(res => res.json())
             .then((data) => {
                 this.setState({ recipes: data });
-                console.log(data)
             })
             .catch(console.log)
     }
@@ -37,12 +30,8 @@ class RecipeData extends Component {
                     <h1 className="recipe-data-heading">Recipe Data</h1>
                     {
                         this.state.recipes.map((recipe, index) => (
-                            <div key={index} className="recipe-div">
-                                <div className="recipe-name">name: {recipe.name}</div>
-                                <div className="instructions">instructions: {recipe.instructions}</div>
-                                <button className="delete-button" onClick={() => { this.onButtonDelete(recipe._id) }}>Delete</button>
-                            </div>
-                        )) 
+                            <Recipe recipe={recipe} key={index} />
+                        ))
                     }
                 </div>
                 <Footer />
