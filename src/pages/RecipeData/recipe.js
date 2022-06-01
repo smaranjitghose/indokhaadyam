@@ -5,7 +5,7 @@ const Recipe = ({recipe}) => {
     const [editMode, setEditMode] = useState(false);
 
     const onButtonDelete = async (id) => {
-        const response = await fetch('http://127.0.0.1:5000/recipe/' + id, {
+        const response = await fetch('https://indokhaadyam-b.vercel.app/recipe/' + id, {
             method: 'DELETE',
         })
         console.log(response)
@@ -13,7 +13,7 @@ const Recipe = ({recipe}) => {
     }
 
     const UpdateRecipe = async (id, name, instructions) => {
-        const response = await fetch('http://127.0.0.1:5000/recipe/' + id, {
+        const response = await fetch('https://indokhaadyam-b.vercel.app/recipe/' + id, {
             method: 'PUT',
             headers: {
                 "Content-Type": "application/json"

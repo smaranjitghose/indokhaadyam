@@ -21,9 +21,7 @@ const RecipeForm = () => {
                 },
                 body: JSON.stringify({ name: name, instructions: instructions })
             });
-            const content = await response.json();
-
-            this.state.recipes.push(content)
+            console.log(response);
             setName('');
             setInstructions('');
         }
