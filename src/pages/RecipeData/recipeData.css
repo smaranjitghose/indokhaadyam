@@ -33,3 +33,10 @@
     border-radius: 6px;
     color: white;
 }
+
+.update-button{
+    background-color: blue;
+    padding: 3px 5px;
+    border-radius: 6px;
+    color: white;
+}
